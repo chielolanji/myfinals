@@ -28,9 +28,6 @@ button:hover {
     color: aliceblue;
 }
 
-.span-h1 {
-    color: #00fbfb;
-}
 
 .div-pf ul {
     display: flex;
@@ -153,6 +150,7 @@ button:hover {
     height: 500px;
     margin-left: 70px;
     animation: fadeIn 5s;
+    filter: drop-shadow(10px 7px 10px violet);
 }
 
 @keyframes fadeIn {
@@ -181,9 +179,7 @@ button:hover {
     transition: all 0.7s;
 }
 
-.me img:hover {
-    transform: scale(1.2)
-}
+
 
 .section-about {
     background: url(usok.PNG) no-repeat;
@@ -283,6 +279,30 @@ button:hover {
         border-color: #ffffff; 
     }
   }
+
+  .card {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .card-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 2rem;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover .card-text {
+    opacity: 1;
+  }
+  
   
 
   .arrow {
@@ -382,6 +402,8 @@ transform: rotate(0deg) skewY(-45deg);
     height: 85%;
     width: 50%;
     left: 25%;
+    background: transparent;
+    backdrop-filter: blur(15px);
 }
 
 div .contactme {
@@ -389,6 +411,7 @@ div .contactme {
     text-align: center;
     margin-bottom: 38px;
     padding-top: 10px;
+    
 }
 
 .email {
@@ -517,6 +540,7 @@ ul .wa:hover {
     border: #312d2d;
     place-items: inherit;
     width: 320px;
+    
 }
 
 textarea {
@@ -530,6 +554,7 @@ textarea {
     place-items: inherit;
     resize: none;
     width: 320px;
+    
 }
 
 .social {
@@ -543,6 +568,7 @@ textarea {
     width: 50%;
     float: right;
     height: 50%;
+    
 }
 
 .button-submit {
@@ -719,5 +745,6 @@ textarea {
         font-size: 12px;
     }
 } 
+
 
 
