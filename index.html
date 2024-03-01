@@ -1,9 +1,8 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio project</title>
     <link rel="stylesheet" href="slide.css">
     <link rel="icon" href="images/title-icon.png">
     <script>
@@ -42,6 +41,9 @@
   }
 
   showSlides();
+
+
+ 
     </script>
 </head>
 <body>
@@ -65,8 +67,14 @@
     
     <section id="home" class="section-home">
         <div class="content">
-            <h1>Hi,Chielo Nicole D. Cabarle here!</h1>
-            <h3>Your Front-End Web Developer</h3>
+            <h1> <span style="font-size: 2rem ;">Hi!</span></h1>
+            <h1> <span style="font-size: 2rem ;">Chielo Cabarle here!</span></h1>
+            <h3>Your Front-End Web Developer</h3><br>
+            <p1>As a third-year Information Technology student, I embrace challenges and opportunities guided by Eleanor Roosevelt's quote: 
+                'The future belongs to those who believe in the beauty of their dreams.' 
+                I persevere amidst rapid changes, aiming to leverage technology for societal good and contribute to innovation.</p1>
+
+            
             
             <div class="btn">
                 <a href="#contact">Let's Talk</a>
@@ -96,7 +104,7 @@
 
 
         <ul class="ul-nav">
-            <li><a class="a-home" href="about.html">Click here and explore!</a></li>
+            <li><a class="a-home" href="about.html">Click here and explore!</a></li>            
         </ul>
     </section>
     <section id="project" class="section-project">
@@ -107,12 +115,42 @@
             <h1>My Projects</h1>
             <div class="slider">
                 <div class="slides">
-                  <div class="slide"><img src="p1.PNG" alt="Image 1"></div>
-                  <div class="slide"><img src="p2.PNG" alt="Image 2"></div>
-                  <div class="slide"><img src="p3.PNG" alt="Image 3"></div>
-                  <div class="slide"><img src="p4.PNG" alt="Image 4"></div>
-                  <div class="slide"><img src="p5.PNG" alt="Image 5"></div>
-                  <div class="slide"><img src="p6.PNG" alt="Image 6"></div>
+                  <div class="slide">
+                    <div class="card">
+                      <img src="p1.PNG" alt="Image 1">
+                      <div class="card-text">Calculator</div>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <div class="card">
+                      <img src="p2.PNG" alt="Image 2">
+                      <div class="card-text">Landing Page</div>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <div class="card">
+                      <img src="p3.PNG" alt="Image 3">
+                      <div class="card-text">Quiz</div>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <div class="card">
+                      <img src="p4.PNG" alt="Image 4">
+                      <div class="card-text">TO-Do list</div>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <div class="card">
+                      <img src="p5.PNG" alt="Image 5">
+                      <div class="card-text">ADD Event</div>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <div class="card">
+                      <img src="p6.PNG" alt="Image 6">
+                      <div class="card-text">ChangeColor</div>
+                    </div>
+                  </div>
                 </div>
                 <div class="arrow prev" onclick="prevSlide()">&#10094;</div>
                 <div class="arrow next" onclick="nextSlide()">&#10095;</div>
@@ -171,15 +209,25 @@
             </div>
             <div class="textbox">
                 <div class="textname">
-                    <input class="inputbox" type="text" placeholder="Your Name"><br>
-                    <input class="inputbox" type="text" placeholder="Your Email"><br>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="5a7de6c2-c1ea-4e6a-8164-312b55e8c212">
+                
+                    <input class="inputbox" type="text" name="name" required  placeholder="Your Name"> <br>
+                    <input class="inputbox" type="email" name="email" required  placeholder="Your Email"> <br>
+                    <textarea id="" cols="30" rows="10" name="message" required  placeholder="Your Message"></textarea> <br>
+                    <div class="submit">
+                        <button class="button-submit">SUBMIT</button>
+                    </div>
                 </div>
-                <div class="submit">
-                    <button class="button-submit">SUBMIT</button>
                 </div>
             </div>
         </div>
+
+      
+
+
+       
     </section>
     <footer class="ft-container">
         <div class="div-ft">
